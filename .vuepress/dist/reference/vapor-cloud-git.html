@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vapor Cloud GIT</title>
+    <meta name="description" content="">
+    <link rel="icon" href="/logo.svg">
+    
+    <link rel="preload" href="/assets/css/0.styles.7b9d5d88.css" as="style"><link rel="preload" href="/assets/js/app.69da0abf.js" as="script"><link rel="preload" href="/assets/js/11.26329b69.js" as="script"><link rel="prefetch" href="/assets/js/5.381e71df.js"><link rel="prefetch" href="/assets/js/2.178aa6c2.js"><link rel="prefetch" href="/assets/js/3.74f02869.js"><link rel="prefetch" href="/assets/js/4.37d8023c.js"><link rel="prefetch" href="/assets/js/6.2f341fc7.js"><link rel="prefetch" href="/assets/js/7.608221bf.js"><link rel="prefetch" href="/assets/js/8.13329ccf.js"><link rel="prefetch" href="/assets/js/9.65f6aa22.js"><link rel="prefetch" href="/assets/js/10.00676417.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7b9d5d88.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://vapor.cloud" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vapor Cloud website
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://vapor.cloud" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vapor Cloud website
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/reference/" class="sidebar-link">Reference</a></li><li><div class="sidebar-group"><p class="sidebar-heading open"><span>Deployment</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/reference/vapor-cloud-git.html" class="active sidebar-link">Vapor Cloud GIT</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/reference/vapor-cloud-git.html#setting-up" class="sidebar-link">Setting up</a></li></ul></li><li><a href="/reference/custom-docker.html" class="sidebar-link">Custom docker</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="vapor-cloud-git"><a href="#vapor-cloud-git" aria-hidden="true" class="header-anchor">#</a> Vapor Cloud GIT</h1> <p>The recommended deployment method, is using the Vapor Cloud GIT. This is a git server
+hosted by Vapor Cloud, providing free private repositories.</p> <h2 id="setting-up"><a href="#setting-up" aria-hidden="true" class="header-anchor">#</a> Setting up</h2> <p>Setting up Vapor Cloud GIT, is easy through the Toolbox.</p> <p>Simply run</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>vapor-beta cloud init
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>After this you can simply run</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> push cloud master:production
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>This will deploy <code>master</code> branch to <code>production</code> environment.</p> <p>to make sure you have access, you can always test the connection with the following</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">ssh</span> git@git.code.vapor.cloud
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>This will return something similar to this</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>PTY allocation request failed on channel 0
+Hi jonas@qutheory.io<span class="token operator">!</span> Welcome to Vapor Cloud GIT
+ R W	app1
+ R W	app2
+Connection to git.code.vapor.cloud closed.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/11.26329b69.js" defer></script><script src="/assets/js/app.69da0abf.js" defer></script>
+  </body>
+</html>
