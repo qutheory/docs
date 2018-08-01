@@ -1,5 +1,6 @@
 <template>
-    <div class="vapor-app">
+    <div class="vapor-app" style="max-width:1424px; margin: 0 auto;">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <span v-for="box in boxes">
           <box
             :headline="box.headline"
@@ -10,6 +11,12 @@
         </span>
     </div>
 </template>
+
+<style lang="scss">
+.vapor-app {
+  background-color: #F4F7FA;
+}
+</style>
 
 <script>
 import box from './box'

@@ -1,7 +1,6 @@
 <template>
   <div class="container">
-    <div class="box">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <div class="box" v-bind:class="boxClass">
       <router-link :to="{path: link}">
         <center>
           <br /><br />
@@ -22,14 +21,14 @@
     margin:20px;
   }
   .box {
-    transition: box-shadow .3s;
+    transition: box-shadow .1s;
     float:left;
-    padding:10px;
+    padding:30px;
     width: 280px;
     height: 250px;
-    border: 1px solid #f1f1f1;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    //border: 1px solid #f1f1f1;
+    //margin-right: 20px;
+    //margin-bottom: 20px;
   }
   .box .icon {
     font-size: 60px;
@@ -39,6 +38,9 @@
   }
   .box:hover {
     box-shadow: 0 0 30px rgba(33,33,33,.2);
+    z-index: 99999999999999999;
+    transform: scale(1.08);
+    background-color: #FFF;
   }
   .box .headline {
     font-weight: bold;
