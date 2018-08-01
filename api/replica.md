@@ -8,6 +8,57 @@ next: false
 
 [[toc]]
 
+## View
+
+View a specific replica
+
+**GET /v2/apps/replicas/APPLICATION/ENVIRONMENT/REPLICA**
+
+### Example request
+
+```bash
+curl --request GET \
+  --url https://api-new.v2.vapor.cloud/v2/apps/replicas/my-app/production/web \
+  --header 'authorization: Bearer AccessToken'
+```
+
+### Example response
+
+```json
+{
+	"environment": {
+		"environment": {
+			"id": "060D598E-E6F4-46E7-B5FD-2733B1DB275F",
+			"defaultBranch": "master",
+			"name": "production",
+			"replicaSize": "free",
+			"replicas": 1
+		},
+		"organization": {
+			"id": "97E55E93-9803-4BCF-8BAA-A4168A5153D0",
+			"slug": "my-organization",
+			"name": "My organiation"
+		},
+		"hosting": {
+			"gitURL": "git@git.code.vapor.cloud:my-app.git"
+		},
+		"application": {
+			"id": "BDF65B08-A15A-4DFA-93EC-777E252B8548",
+			"repoName": "my-app",
+			"name": "My application"
+		}
+	},
+	"replica": {
+		"version": "5c6d205",
+		"id": 21,
+		"status": "created",
+		"replicas": 1,
+		"environmentID": "060D598E-E6F4-46E7-B5FD-2733B1DB275F",
+		"name": "web"
+	}
+}
+```
+
 ## Scale
 
 Scale the amount of replicas of your application.

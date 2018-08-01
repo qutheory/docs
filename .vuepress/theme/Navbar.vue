@@ -3,7 +3,7 @@
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
     <a href="/" style="color:#2c3e50">
       <img src="./logo.svg" height="40" />
-      <span style="top:14px; left:70px; font-size:18px; position:fixed;">Vapor Cloud Documentation</span>
+      <span class="logo-text" style="top:14px; left:70px; font-size:18px; position:fixed;">Vapor Cloud Documentation</span>
     </a>
     <router-link
       :to="$localePath"
