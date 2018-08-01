@@ -205,7 +205,7 @@ export default {
   width 410px
 
 .search_container .search #query:focus
-  box-shadow 0px 5px 14px 0px rgba(0, 0, 0, 0.25)
+  box-shadow 0px 8px 16px 0px rgba(0, 0, 0, 0.25)
   outline-width: 0;
 
 .search_container .search:before
@@ -222,29 +222,6 @@ export default {
   opacity 0.7
   transition-property all
   transition-duration 120ms
-
-.search-box
-  display inline-block
-  position relative
-  margin-right 0.5rem
-  input
-    cursor text
-    width 20rem
-    color lighten($textColor, 25%)
-    display inline-block
-    border 1px solid darken($borderColor, 10%)
-    border-radius 6px
-    font-size 0.9rem
-    line-height 2rem
-    padding 0 0.5rem 0 2rem
-    outline none
-    transition all .2s ease
-    background #fff url(./search.svg) 0.6rem 0.5rem no-repeat
-    background-size 1rem
-    &:focus
-      cursor auto
-      border-color $accentColor
-
 @media (max-width: $MQNarrow)
   .search-box
     input
