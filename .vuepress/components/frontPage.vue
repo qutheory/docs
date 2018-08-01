@@ -59,6 +59,12 @@ export default {
             link: '/',
           },
           {
+            headline: 'API Docs',
+            text: 'Documentation for using our public API',
+            icon: 'fas fa-cloud',
+            link: '/api/',
+          },
+          {
             headline: 'Announcements',
             text: 'Latest Vapor Cloud news',
             icon: 'fas fa-bullhorn',

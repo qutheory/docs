@@ -3,9 +3,6 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/logo.svg' }]
   ],
-  markdown: {
-    lineNumbers: true
-  },
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
@@ -30,7 +27,13 @@ module.exports = {
           ]
         },
       ],
-
+      '/api/': [
+        '',
+        'application',
+        'configuration',
+        'git',
+        'replica'
+      ],
       '/getting-started/': [
         '',
         'test'
