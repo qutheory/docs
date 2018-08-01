@@ -18,8 +18,15 @@ module.exports = {
           title: 'Deployment',
           collapsable: false,
           children: [
-            'vapor-cloud-git',
-            'custom-docker'
+            'deployment/vapor-cloud-git',
+            'deployment/custom-docker'
+          ]
+        },
+        {
+          title: 'Data management',
+          collapsable: false,
+          children: [
+            'data-management/database'
           ]
         },
       ],
