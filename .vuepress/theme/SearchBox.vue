@@ -209,45 +209,67 @@ export default {
   outline-width: 0;
 
 .search_container .search:before
-  content ''
+  font-family "Font Awesome 5 Free"
+  content "\f002"
+  font-style normal
+  font-weight 900
+  text-decoration inherit
   display block
   position absolute
-  top 0
+  z-index 999999999999999999999
+  top 15px
+  left 5px
+  font-size 28px
   width 60px
   height 100%
-  background-image url('//p6.zdassets.com/hc/theme_assets/138842/200037786//icon_search_black.png')
-  background-position center
-  background-repeat no-repeat
-  background-size 25px 25px
   opacity 0.7
   transition-property all
   transition-duration 120ms
-@media (max-width: $MQNarrow)
-  .search-box
-    input
+@media (max-width: $MQMobile)
+  .search_container
+    .suggestions
+      width 270px!important
+      left 10px
+  .search_container .search
+    max-width 300px
+    #query
+      max-width 200px
       cursor pointer
-      width 0
       border-color transparent
       position relative
-      left 1rem
       &:focus
         cursor text
-        left 0
-        width 10rem
+  .search_container .search:before
+    font-family "Font Awesome 5 Free"
+    content "\f002"
+    z-index 100
+    font-style normal
+    font-weight 900
+    text-decoration inherit
+    display block
+    position absolute
+    top 15px
+    left 10px
+    font-size 28px
+    width 60px
+    height 100%
+    opacity 0.7
+    transition-property all
+    transition-duration 120ms
 
 @media (max-width: $MQNarrow) and (min-width: $MQMobile)
-  .search-box
+  .search_container .search
     .suggestions
       left 0
 
 @media (max-width: $MQMobile)
-  .search-box
+  .search_container .search
     margin-right 0
     .suggestions
       right 0
 
 @media (max-width: $MQMobileNarrow)
-  .search-box
+  .search_container .search
     .suggestions
       width calc(100vw - 4rem)
     input:focus

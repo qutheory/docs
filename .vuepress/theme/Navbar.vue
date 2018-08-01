@@ -1,9 +1,10 @@
 <template>
   <header class="navbar">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
     <a href="/" style="color:#2c3e50">
       <img src="./cloud-logo.png" height="50" />
-      <span class="logo-text" style="top:25px; left:173px; color:#fff; font-size:18px; position:fixed;"> | Documentation</span>
+      <!--<span class="logo-text" style="top:25px; left:173px; color:#fff; font-size:18px; position:fixed;"> | Documentation</span>-->
     </a>
     <router-link
       :to="$localePath"
