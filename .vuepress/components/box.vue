@@ -2,7 +2,7 @@
   <div class="container">
     <div class="box">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-      <a :href="link">
+      <router-link :to="{path: link}">
         <center>
           <br /><br />
           <i class="icon" v-bind:class="icon"></i>
@@ -10,7 +10,7 @@
           <div class="headline" v-html="headline"></div>
           <div class="text" v-html="text"></div>
         </center>
-      </a>
+      </router-link>
     </div>
   </div>
 </template>
