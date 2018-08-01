@@ -8,6 +8,81 @@ next: false
 
 [[toc]]
 
+## Index
+
+**POST /admin/organizations**
+
+### Example request
+
+```bash
+curl --request GET \
+  --url https://api-new.v2.vapor.cloud/admin/organizations \
+  --header 'authorization: Bearer AccessToken' \
+  --header 'content-type: application/json'
+```
+
+### Example response
+
+```json
+{
+	"data": [
+		{
+			"refillCredits": null,
+			"cost": null,
+			"id": "712BD38D-519D-46B0-8A23-803574835580",
+			"name": "My organization",
+			"credits": 0,
+			"refillThreshold": null,
+			"slug": "my-organization",
+			"billingEmail": null,
+			"wallet": null
+		}
+	],
+	"page": {
+		"position": {
+			"max": 1,
+			"current": 1
+		},
+		"data": {
+			"per": 10,
+			"total": 1
+		}
+	}
+}
+```
+
+## View
+
+**POST /admin/organizations/ID**
+
+### Example request
+
+```bash
+curl --request GET \
+  --url https://api-new.v2.vapor.cloud/admin/organizations/712BD38D-519D-46B0-8A23-803574835580 \
+  --header 'authorization: Bearer AccessToken' \
+  --header 'content-type: application/json'
+```
+
+### Example response
+
+```json
+{
+	"refillCredits": null,
+	"cost": {
+		"hourly": 0,
+		"monthly": 0
+	},
+	"id": "712BD38D-519D-46B0-8A23-803574835580",
+	"name": "My organization",
+	"credits": 0,
+	"refillThreshold": null,
+	"slug": "my-organization",
+	"billingEmail": null,
+	"wallet": null
+}
+```
+
 ## Create
 
 **POST /admin/organizations**
@@ -39,3 +114,9 @@ curl --request POST \
 	"refillThreshold": null
 }
 ```
+
+## Delete
+
+::: tip
+@TODO
+:::
