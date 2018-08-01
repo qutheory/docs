@@ -20,6 +20,7 @@
     margin:20px;
   }
   .box {
+    transition: box-shadow .3s;
     float:left;
     padding:10px;
     width: 280px;
@@ -35,7 +36,7 @@
     color: #2c3e50;
   }
   .box:hover {
-    background: #f1f1f1;
+    box-shadow: 0 0 30px rgba(33,33,33,.2);
   }
   .box .headline {
     font-weight: bold;

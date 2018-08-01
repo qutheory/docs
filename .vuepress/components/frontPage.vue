@@ -1,6 +1,6 @@
 <template>
     <div class="vapor-app">
-      <center><h1>Vapor Cloud - Knowledgebase</h1></center>
+      <center><h1>Vapor Cloud Documentation</h1></center>
         <span v-for="box in boxes">
           <box
             :headline="box.headline"

@@ -23,7 +23,8 @@ module.exports = {
           title: 'Data management',
           collapsable: false,
           children: [
-            'data-management/database'
+            'data-management/database',
+            'data-management/redis'
           ]
         },
       ],
