@@ -26,13 +26,13 @@ export default {
             headline: 'Getting started',
             text: 'Get started using Vapor Cloud, insight into what Vapor Cloud is, and how to utilize all the features for your project',
             icon: 'fas fa-question-circle',
-            link: '/',
+            link: '/getting-started/',
           },
           {
             headline: 'Using the CLI',
             text: 'How to use the Vapor Toolbox',
             icon: 'fas fa-terminal',
-            link: '/',
+            link: '/using-the-cli/',
           },
           {
             headline: 'Reference',
@@ -44,19 +44,19 @@ export default {
             headline: 'Common tasks',
             text: 'Some general common tasks, to get you going on Vapor Cloud',
             icon: 'fas fa-bars',
-            link: '/',
+            link: '/common-tasks/',
           },
           {
             headline: 'Tutorials',
             text: 'Articles describing specific use cases',
             icon: 'fas fa-graduation-cap',
-            link: '/',
+            link: '/tutorials/',
           },
           {
             headline: 'Our infrastructure',
             text: 'Detailed information about our infrastructure, security',
             icon: 'fas fa-cogs',
-            link: '/',
+            link: '/our-infrastructure/',
           },
           {
             headline: 'API Docs',
@@ -68,7 +68,7 @@ export default {
             headline: 'Announcements',
             text: 'Latest Vapor Cloud news',
             icon: 'fas fa-bullhorn',
-            link: '/',
+            link: '/announcements/',
           }
         ]
       }

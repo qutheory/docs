@@ -43,6 +43,21 @@ module.exports = {
         '',
         'test'
       ],
+      '/using-the-cli/': [
+        ''
+      ],
+      '/common-tasks/': [
+        ''
+      ],
+      '/tutorials/': [
+        ''
+      ],
+      '/our-infrastructure/': [
+        ''
+      ],
+      '/announcements/': [
+        ''
+      ],
       '/': [
         ''
       ]
