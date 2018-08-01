@@ -1,17 +1,22 @@
 <template>
-  <div class="search-box">
-    <input
-      @input="query = $event.target.value"
-      aria-label="Search"
-      :value="query"
-      autocomplete="off"
-      spellcheck="false"
-      @focus="focused = true"
-      @blur="focused = false"
-      @keyup.enter="go(focusIndex)"
-      @keyup.up="onUp"
-      @keyup.down="onDown"
-    >
+  <!--<div class="search-box">-->
+    <div class="search_container">
+      <div class="search">
+        <input
+          id="query"
+          @input="query = $event.target.value"
+          aria-label="Search"
+          :value="query"
+          autocomplete="off"
+          placeholder="Search..."
+          spellcheck="false"
+          @focus="focused = true"
+          @blur="focused = false"
+          @keyup.enter="go(focusIndex)"
+          @keyup.up="onUp"
+          @keyup.down="onDown"
+        >
+      </div>
     <ul
       class="suggestions"
       v-if="showSuggestions"
@@ -153,32 +158,17 @@ export default {
 <style lang="stylus">
 @import './styles/config.styl'
 
-.search-box
-  display inline-block
+.search_container
   position relative
-  margin-right 0.5rem
-  input
-    cursor text
-    width 20rem
-    color lighten($textColor, 25%)
-    display inline-block
-    border 1px solid darken($borderColor, 10%)
-    border-radius 6px
-    font-size 0.9rem
-    line-height 2rem
-    padding 0 0.5rem 0 2rem
-    outline none
-    transition all .2s ease
-    background #fff url(./search.svg) 0.6rem 0.5rem no-repeat
-    background-size 1rem
-    &:focus
-      cursor auto
-      border-color $accentColor
+  width: 100%
+  max-width: 500px
+  margin: 0px auto
   .suggestions
+    width 480px!important
     background #fff
     width 20rem
     position absolute
-    top 1.5rem
+    top 50px
     border 1px solid darken($borderColor, 10%)
     border-radius 6px
     padding 0.4rem
@@ -201,6 +191,59 @@ export default {
       background-color #f3f4f5
       a
         color $accentColor
+
+.search_container .search #query
+  border 0px
+  padding 20px 20px 20px 60px
+  line-height 22px
+  font-size 17.1px
+  box-shadow 0px 9px 14px 0px rgba(0, 0, 0, 0.1)
+  border-radius 8px
+  transition-property all
+  transition-duration 120ms
+  color #2C2D30
+  width 410px
+
+.search_container .search #query:focus
+  box-shadow 0px 5px 14px 0px rgba(0, 0, 0, 0.25)
+  outline-width: 0;
+
+.search_container .search:before
+  content ''
+  display block
+  position absolute
+  top 0
+  width 60px
+  height 100%
+  background-image url('//p6.zdassets.com/hc/theme_assets/138842/200037786//icon_search_black.png')
+  background-position center
+  background-repeat no-repeat
+  background-size 25px 25px
+  opacity 0.7
+  transition-property all
+  transition-duration 120ms
+
+.search-box
+  display inline-block
+  position relative
+  margin-right 0.5rem
+  input
+    cursor text
+    width 20rem
+    color lighten($textColor, 25%)
+    display inline-block
+    border 1px solid darken($borderColor, 10%)
+    border-radius 6px
+    font-size 0.9rem
+    line-height 2rem
+    padding 0 0.5rem 0 2rem
+    outline none
+    transition all .2s ease
+    background #fff url(./search.svg) 0.6rem 0.5rem no-repeat
+    background-size 1rem
+    &:focus
+      cursor auto
+      border-color $accentColor
 
 @media (max-width: $MQNarrow)
   .search-box
