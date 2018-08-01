@@ -2,8 +2,8 @@
   <header class="navbar">
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
     <a href="/" style="color:#2c3e50">
-      <img src="./logo.svg" height="40" />
-      <span class="logo-text" style="top:14px; left:70px; font-size:18px; position:fixed;">Vapor Cloud Documentation</span>
+      <img src="./cloud-logo.png" height="50" />
+      <span class="logo-text" style="top:25px; left:173px; color:#fff; font-size:18px; position:fixed;"> | Documentation</span>
     </a>
     <router-link
       :to="$localePath"
@@ -27,8 +27,14 @@
         v-if="isAlgoliaSearch"
         :options="algolia"
       />
-      <SearchBox v-else-if="$site.themeConfig.search !== false"/>
+
       <NavLinks class="can-hide"/>
+    </div>
+    <div class="searchBox" style="display:none;">
+      <center>
+        <h1 style="color:#FFF;">How can we help you?</h1>
+        <SearchBox/>
+      </center>
     </div>
   </header>
 </template>

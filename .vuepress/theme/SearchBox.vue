@@ -159,11 +159,11 @@ export default {
   margin-right 0.5rem
   input
     cursor text
-    width 10rem
+    width 20rem
     color lighten($textColor, 25%)
     display inline-block
     border 1px solid darken($borderColor, 10%)
-    border-radius 2rem
+    border-radius 6px
     font-size 0.9rem
     line-height 2rem
     padding 0 0.5rem 0 2rem

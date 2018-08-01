@@ -17,6 +17,8 @@
 
 <style lang="scss">
   .container {
+    position: relative;
+    top:250px;
     margin:20px;
   }
   .box {
@@ -26,8 +28,8 @@
     width: 280px;
     height: 250px;
     border: 1px solid #f1f1f1;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
   .box .icon {
     font-size: 60px;
