@@ -1,7 +1,7 @@
 // .vuepress/config.js
 module.exports = {
   head: [
-    ['link', { rel: 'icon', href: '/logo.svg' }]
+    ['link', { rel: 'icon', href: '/logo.png' }]
   ],
   themeConfig: {
     nav: [
