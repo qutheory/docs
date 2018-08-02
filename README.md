@@ -1,15 +1,21 @@
----
-title: "Vapor Cloud | Documentation"
-sidebar: false
-prev: false
-next: false
-layout: frontPage
----
+# Vapor Cloud Docs
 
-<fontBox name="Foobar"/>
+This is the documentation for Vapor Cloud 2.
 
-<fontBox name="Foobar 2"/>
+The documentation can temporarily be found here: https://cloud-docs.v2.vapor.cloud
 
-<fontBox name="Foobar 3"/>
+## Development
 
-<fontBox name="Foobar 4"/>
+The documentation is built using a system called VuePress, to make it work locally you should first install this with
+
+```
+yarn global add vuepress # OR npm install -g vuepress
+```
+
+After this, simply run it with
+
+```
+vuepress dev
+```
+
+You don't need to build anything to production, this happens during the deployment process (see the Dockerfile)
