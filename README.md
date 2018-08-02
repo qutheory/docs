@@ -16,6 +16,7 @@ After this, simply run it with
 
 ```
 cd docs/
+npm install
 vuepress dev
 ```
 
