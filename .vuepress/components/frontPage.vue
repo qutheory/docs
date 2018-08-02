@@ -1,5 +1,5 @@
 <template>
-    <div class="vapor-app" style="max-width:1424px; margin: 0 auto;">
+    <div class="vapor-app frontpage" style="max-width:1424px; margin: 0 auto;">
         <span v-for="box in boxes">
           <box
             :headline="box.headline"

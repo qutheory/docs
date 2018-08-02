@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar">
+  <header class="navbar" id="navbar">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
     <a href="/" style="color:#2c3e50">
@@ -31,7 +31,7 @@
 
       <NavLinks class="can-hide"/>
     </div>
-    <div class="searchBox" style="display:none;">
+    <div class="searchBox" id="searchBox" style="display:none;">
       <center>
         <h1 style="color:#FFF;">How can we help you?</h1>
         <SearchBox/>
@@ -45,6 +45,9 @@ import SidebarButton from './SidebarButton.vue'
 import AlgoliaSearchBox from '@AlgoliaSearchBox'
 import SearchBox from './SearchBox.vue'
 import NavLinks from './NavLinks.vue'
+import jQuery from 'jquery'
+
+let $ = jQuery
 
 export default {
   components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox },

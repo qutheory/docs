@@ -16,16 +16,23 @@ View a specific replica
 
 ### Example request
 
-```bash
-curl --request GET \
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-bash">curl --request GET \
   --url https://api-new.v2.vapor.cloud/v2/apps/replicas/my-app/production/web \
   --header 'authorization: Bearer AccessToken'
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>
 
 ### Example response
 
-```json
-{
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-json">{
 	"environment": {
 		"environment": {
 			"id": "060D598E-E6F4-46E7-B5FD-2733B1DB275F",
@@ -57,7 +64,12 @@ curl --request GET \
 		"name": "web"
 	}
 }
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>
 
 ## Scale
 
@@ -71,20 +83,27 @@ Exposes deployment object, listen to websocket to get status
 
 ### Example request
 
-```bash
-curl --request PATCH \
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-bash">curl --request PATCH \
   --url https://api-new.v2.vapor.cloud/v2/apps/replicas/my-app/production/web/scale \
   --header 'authorization: Bearer AccessToken' \
   --header 'content-type: application/json' \
   --data '{
 	"replicas": 1
 }'
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>
 
 ### Example response
 
-```json
-{
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-json">{
 	"replica": {
 		"status": "created",
 		"name": "web",
@@ -108,7 +127,12 @@ curl --request PATCH \
 		"userID": "ACBCCDC5-BBF2-414A-BB0E-5C27C4B4ED04"
 	}
 }
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>
 
 ## Resize
 
@@ -122,20 +146,27 @@ Exposes deployment object, listen to websocket to get status
 
 ### Example request
 
-```bash
-curl --request PATCH \
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-bash">curl --request PATCH \
   --url https://api-new.v2.vapor.cloud/v2/apps/replicas/my-app/production/web/resize \
   --header 'authorization: Bearer AccessToken' \
   --header 'content-type: application/json' \
   --data '{
 	"plan": "small"
 }'
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>
 
 ### Example response
 
-```json
-{
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-json">{
 	"deployment": {
 		"meta": {
 			"gitHash": "",
@@ -178,7 +209,12 @@ curl --request PATCH \
 		"name": "web"
 	}
 }
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>
 
 ## Reboot
 
@@ -192,17 +228,24 @@ Exposes deployment object, listen to websocket to get status
 
 ### Example request
 
-```bash
-curl --request PATCH \
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-bash">curl --request PATCH \
   --url https://api-new.v2.vapor.cloud/v2/apps/replicas/my-app/production/web/scale \
   --header 'authorization: Bearer AccessToken' \
   --header 'content-type: application/json'
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>
 
 ### Example response
 
-```json
-{
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-json">{
 	"replica": {
 		"status": "created",
 		"id": 3,
@@ -226,4 +269,9 @@ curl --request PATCH \
 		"type": "replica"
 	}
 }
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>

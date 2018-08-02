@@ -14,17 +14,24 @@ next: false
 
 ### Example request
 
-```bash
-curl --request GET \
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-bash">curl --request GET \
   --url https://api-new.v2.vapor.cloud/admin/organizations \
   --header 'authorization: Bearer AccessToken' \
   --header 'content-type: application/json'
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>
 
 ### Example response
 
-```json
-{
+<tabs>
+    <tab name="CURL">
+<pre class="lang-json"><code class="lang-json">{
 	"data": [
 		{
 			"refillCredits": null,
@@ -49,7 +56,12 @@ curl --request GET \
 		}
 	}
 }
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>  
+    </tab>
+</tabs>
 
 ## View
 
@@ -57,17 +69,24 @@ curl --request GET \
 
 ### Example request
 
-```bash
-curl --request GET \
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-bash">curl --request GET \
   --url https://api-new.v2.vapor.cloud/admin/organizations/712BD38D-519D-46B0-8A23-803574835580 \
   --header 'authorization: Bearer AccessToken' \
   --header 'content-type: application/json'
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>
 
 ### Example response
 
-```json
-{
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-json">{
 	"refillCredits": null,
 	"cost": {
 		"hourly": 0,
@@ -81,7 +100,12 @@ curl --request GET \
 	"billingEmail": null,
 	"wallet": null
 }
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>
 
 ## Create
 
@@ -89,20 +113,27 @@ curl --request GET \
 
 ### Example request
 
-```bash
-curl --request POST \
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-bash">curl --request POST \
   --url https://api-new.v2.vapor.cloud/admin/organizations \
   --header 'authorization: Bearer AccessToken' \
   --header 'content-type: application/json' \
   --data '{
 	"name": "My organization"
 }'
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>
 
 ### Example response
 
-```json
-{
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-json">{
 	"credits": 0,
 	"name": "My organization",
 	"cost": null,
@@ -113,7 +144,12 @@ curl --request POST \
 	"billingEmail": null,
 	"refillThreshold": null
 }
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>
 
 ## Delete
 

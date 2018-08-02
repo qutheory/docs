@@ -18,8 +18,9 @@ Be aware, this endpoint can take between 5 and 15 seconds to finish
 
 ### Example request
 
-```bash
-curl --request POST \
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-bash">curl --request POST \
   --url https://api-new.v2.vapor.cloud/v1/application \
   --header 'authorization: Bearer AccessToken' \
   --header 'content-type: application/json' \
@@ -33,12 +34,18 @@ curl --request POST \
 		"name": "production"
 	}
 }'
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>
 
 ### Example response
 
-```json
-{
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-json">{
 	"environment": {
 		"defaultBranch": "master",
 		"name": "production"
@@ -52,4 +59,9 @@ curl --request POST \
 		"name": "My application"
 	}
 }
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>

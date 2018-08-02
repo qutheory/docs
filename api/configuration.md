@@ -14,16 +14,23 @@ next: false
 
 ### Example request
 
-```bash
-curl --request GET \
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-bash">curl --request GET \
   --url https://api-new.v2.vapor.cloud/v1/config/my-app/production \
   --header 'authorization: Bearer AccessToken'
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>
 
 ### Example response
 
-```json
-[
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-json">[
     {
         "value": "Value",
         "environment": {
@@ -33,7 +40,12 @@ curl --request GET \
         "key": "KEY"
     }
 ]
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>
 
 ## Modify configuration
 
@@ -49,20 +61,27 @@ Exposes deployment object, listen to websocket to get status
 
 ### Example request
 
-```bash
-curl --request PATCH \
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-bash">curl --request PATCH \
   --url https://api-new.v2.vapor.cloud/v1/config/my-app/production \
   --header 'authorization: Bearer AccessToken' \
   --header 'content-type: application/json' \
   --data '{
     "KEY": "Value"
 }'
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>
 
 ### Example response
 
-```json
-{
+<tabs>
+    <tab name="CURL">
+<pre><code class="language-json">{
     "deployment": {
         "status": "waiting",
         "id": 189,
@@ -88,4 +107,9 @@ curl --request PATCH \
         }
     ]
 }
-```
+</code></pre>
+    </tab>
+    <tab name="Vapor">
+<pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+</tabs>

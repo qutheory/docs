@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="box" v-bind:class="boxClass">
+    <div class="box">
       <router-link :to="{path: link}">
         <center>
           <br /><br />
