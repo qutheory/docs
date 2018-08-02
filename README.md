@@ -15,6 +15,7 @@ yarn global add vuepress # OR npm install -g vuepress
 After this, simply run it with
 
 ```
+cd docs/
 vuepress dev
 ```
 
