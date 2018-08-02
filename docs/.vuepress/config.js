@@ -4,6 +4,19 @@ module.exports = {
     ['link', { rel: 'icon', href: '/logo.png' }]
   ],
   themeConfig: {
+    repo: 'vapor-cloud/docs',
+      // Customising the header label
+      // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
+    repoLabel: 'Contribute!',
+    docsRepo: 'vapor-cloud/docs',
+    // if your docs are not at the root of the repo:
+    docsDir: 'docs',
+    // if your docs are in a specific branch (defaults to 'master'):
+    docsBranch: 'master',
+    // defaults to false, set to true to enable
+    editLinks: true,
+    // custom text for edit link. Defaults to "Edit this page"
+    editLinkText: 'Help us improve this page!',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Vapor Cloud website', link: 'https://vapor.cloud' },
