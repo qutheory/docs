@@ -217,7 +217,7 @@ export default {
   text-decoration inherit
   display block
   position absolute
-  z-index 500000
+  z-index 15
   top 15px
   left 5px
   font-size 28px
