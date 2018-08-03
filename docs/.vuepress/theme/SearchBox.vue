@@ -63,7 +63,7 @@ export default {
       if (!query) {
         return
       }
-
+      console.log(this.$site)
       const { pages, themeConfig } = this.$site
       const max = themeConfig.searchMaxSuggestions || 5
       const localePath = this.$localePath

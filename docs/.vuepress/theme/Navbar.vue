@@ -37,6 +37,11 @@
       <center>
         <h1>How can we help you?</h1>
         <SearchBox/>
+        <!--<br /><br />
+        <AlgoliaSearchBox
+          v-if="isAlgoliaSearch"
+          :options="algolia"
+        />-->
       </center>
     </div>
   </div>

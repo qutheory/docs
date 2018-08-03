@@ -4,6 +4,11 @@ module.exports = {
     ['link', { rel: 'icon', href: '/logo.png' }]
   ],
   themeConfig: {
+    /*search: false,
+    algolia: {
+      apiKey: 'a4dd85727ec468c4cb74054f582b738e',
+      indexName: 'cloud_local'
+    },*/
     docsRepo: 'vapor-cloud/docs',
     // if your docs are not at the root of the repo:
     docsDir: 'docs',
@@ -19,23 +24,7 @@ module.exports = {
     ],
     sidebar: {
       '/reference/': [
-        '',
-        {
-          title: 'Deployment',
-          collapsable: false,
-          children: [
-            'deployment/vapor-cloud-git',
-            'deployment/custom-docker'
-          ]
-        },
-        {
-          title: 'Data management',
-          collapsable: false,
-          children: [
-            'data-management/database',
-            'data-management/redis'
-          ]
-        },
+        ''
       ],
       '/api/': [
         '',
@@ -53,7 +42,21 @@ module.exports = {
         '',
         'test'
       ],
-      '/using-the-cli/': [
+      '/replica/': [
+        '',
+        {
+          title: 'Deployment',
+          collapsable: false,
+          children: [
+            'deployment/vapor-cloud-git',
+            'deployment/custom-docker'
+          ]
+        }
+      ],
+      '/database/': [
+        ''
+      ],
+      '/cache/': [
         ''
       ],
       '/common-tasks/': [

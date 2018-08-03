@@ -34,16 +34,22 @@ export default {
             link: '/getting-started/',
           },
           {
-            headline: 'Using the CLI',
-            text: 'How to use the Vapor Toolbox',
-            icon: 'fas fa-terminal',
-            link: '/using-the-cli/',
+            headline: 'Replica',
+            text: 'Replica is web hosting in Vapor Cloud',
+            icon: 'fas fa-cloud',
+            link: '/replica/',
           },
           {
-            headline: 'Reference',
-            text: 'Generally how to use Vapor Cloud features such as Connect to git, Deployment, Domains, SSL etc.',
-            icon: 'fas fa-book',
-            link: '/reference/',
+            headline: 'Database',
+            text: 'Information about hosting databases in Vapor Cloud',
+            icon: 'fas fa-database',
+            link: '/database/',
+          },
+          {
+            headline: 'Cache',
+            text: 'Supercharge your app by adding cache',
+            icon: 'fas fa-bolt',
+            link: '/cache/',
           },
           {
             headline: 'Common tasks',
@@ -66,7 +72,7 @@ export default {
           {
             headline: 'API Docs',
             text: 'Documentation for using our public API',
-            icon: 'fas fa-cloud',
+            icon: 'fas fa-terminal',
             link: '/api/',
           },
           {
