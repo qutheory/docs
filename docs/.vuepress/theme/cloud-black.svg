@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg 
+    width="50px" 
+    height="55px" 
+    viewBox="0 0 50 55" 
+    version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+    <title>Vapor Cloud</title>
+    <desc>The Vapor Cloud logo in black.</desc>
+    <g id="hexagon">
+        <g id="Polygon" transform="translate(-24.000000, -28.000000)" fill="#000000">
+            <path 
+                d="M49,28 L74,41.75 L74,69.25 L49,83 L24,69.25 L24,41.75 L49,28 Z M48.9852115,42.8648649 C48.9852115,42.8648649 39.8163265,54.1417109 39.8163265,59.1204075 C39.8163265,64.0991041 43.9279972,68.1351351 49,68.1351351 C54.0720028,68.1351351 58.1836735,64.0991041 58.1836735,59.1204075 C58.1836735,54.1417109 48.9852115,42.8648649 48.9852115,42.8648649 Z"
+            ></path>
+        </g>
+    </g>
+</svg>
