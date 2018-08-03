@@ -1,5 +1,8 @@
 <template>
   <div class="page">
+
+    <articleCategories />
+
     <slot name="top"/>
 
     <Content :custom="false"/>

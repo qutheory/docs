@@ -35,7 +35,7 @@
     </header>
     <div class="searchBox" id="searchBox" style="display:none;">
       <center>
-        <h1 style="color:#000;">How can we help you?</h1>
+        <h1>How can we help you?</h1>
         <SearchBox/>
       </center>
     </div>

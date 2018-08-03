@@ -42,6 +42,7 @@
       v-else
       :sidebar-items="sidebarItems"
     >
+
       <slot
         name="page-top"
         slot="top"

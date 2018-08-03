@@ -17,7 +17,7 @@
 <style lang="scss">
   .container {
     position: relative;
-    top:50px;
+    top:0px;
     margin:20px;
   }
   .box {
@@ -32,6 +32,7 @@
   }
   .box .icon {
     font-size: 60px;
+    color: #2595ff
   }
   .box a {
     color: #2c3e50;
