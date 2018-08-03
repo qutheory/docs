@@ -31,7 +31,7 @@
   background:#2c3e50;
   padding-top:10px;
   padding-bottom:0px;
-  height: 116px;
+  height: 126px;
   width:100%;
   color:#000;
 }
@@ -40,10 +40,11 @@
 }
 .headlines {
   width:140px;
+  border-radius: 4px 4px 0 0;
   float:left;
   font-size:14px;
-  padding-top:5px;
-  padding-bottom:5px;
+  padding-top:10px;
+  padding-bottom:10px;
   margin-right:10px;
   text-align:center;
   background:#2c3e50;

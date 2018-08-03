@@ -15,6 +15,8 @@
       @click="toggleSidebar(false)"
     ></div>
 
+    <articleCategories />
+
     <Sidebar
       :items="sidebarItems"
       @toggle-sidebar="toggleSidebar"
@@ -66,6 +68,8 @@ import Page from './Page.vue'
 import Sidebar from './Sidebar.vue'
 import SWUpdatePopup from './SWUpdatePopup.vue'
 import { resolveSidebarItems } from './util'
+import jQuery from 'jQuery'
+let $ = jQuery
 
 export default {
   components: { Home, Page, Sidebar, Navbar, SWUpdatePopup },
@@ -178,6 +182,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style src="prismjs/themes/prism-tomorrow.css"></style>
