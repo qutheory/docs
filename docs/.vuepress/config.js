@@ -19,7 +19,6 @@ module.exports = {
     editLinkText: 'Help us improve this page!',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Vapor Cloud website', link: 'https://vapor.cloud' },
     ],
     sidebar: {
       '/reference/': [
