@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-headline">
     <br /><br /><br /><br />
     <div class="headline-container">
       <span style="background:#2c3e50" v-for="box in boxes">
