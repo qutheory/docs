@@ -32,7 +32,6 @@
   }
   .box .icon {
     font-size: 60px;
-    color: #2595ff
   }
   .box a {
     color: #2c3e50;

@@ -63,7 +63,8 @@ module.exports = {
         ''
       ],
       '/our-infrastructure/': [
-        ''
+        '',
+        'persistent-storage'
       ],
       '/announcements/': [
         ''
