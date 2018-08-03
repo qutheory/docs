@@ -1,43 +1,45 @@
 <template>
-  <header class="navbar" id="navbar">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
-    <a href="/" style="color:#2c3e50">
-      <img src="./cloud-logo.png" height="50" />
-      <!--<span class="logo-text" style="top:25px; left:173px; color:#fff; font-size:18px; position:fixed;"> | Documentation</span>-->
-    </a>
-    <router-link
-      :to="$localePath"
-      class="home-link"
-    >
-      <img
-        class="logo"
-        v-if="$site.themeConfig.logo"
-        :src="$withBase($site.themeConfig.logo)"
-        :alt="$siteTitle"
+  <div>
+    <header class="navbar" id="navbar">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+      <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
+      <a href="/" style="color:#2c3e50">
+        <img src="./cloud-logo.png" height="50" />
+        <!--<span class="logo-text" style="top:25px; left:173px; color:#fff; font-size:18px; position:fixed;"> | Documentation</span>-->
+      </a>
+      <router-link
+        :to="$localePath"
+        class="home-link"
       >
-      <span
-        class="site-name"
-        v-if="$siteTitle"
-        :class="{ 'can-hide': $site.themeConfig.logo }"
-      >{{ $siteTitle }}</span>
-    </router-link>
+        <img
+          class="logo"
+          v-if="$site.themeConfig.logo"
+          :src="$withBase($site.themeConfig.logo)"
+          :alt="$siteTitle"
+        >
+        <span
+          class="site-name"
+          v-if="$siteTitle"
+          :class="{ 'can-hide': $site.themeConfig.logo }"
+        >{{ $siteTitle }}</span>
+      </router-link>
 
-    <div class="links">
-      <AlgoliaSearchBox
-        v-if="isAlgoliaSearch"
-        :options="algolia"
-      />
+      <div class="links">
+        <AlgoliaSearchBox
+          v-if="isAlgoliaSearch"
+          :options="algolia"
+        />
 
-      <NavLinks class="can-hide"/>
-    </div>
+        <NavLinks class="can-hide"/>
+      </div>
+    </header>
     <div class="searchBox" id="searchBox" style="display:none;">
       <center>
-        <h1 style="color:#FFF;">How can we help you?</h1>
+        <h1 style="color:#000;">How can we help you?</h1>
         <SearchBox/>
       </center>
     </div>
-  </header>
+  </div>
 </template>
 
 <script>

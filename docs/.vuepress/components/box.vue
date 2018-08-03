@@ -17,7 +17,7 @@
 <style lang="scss">
   .container {
     position: relative;
-    top:250px;
+    top:50px;
     margin:20px;
   }
   .box {
