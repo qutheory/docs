@@ -29,7 +29,7 @@ export default {
         boxes: [
           {
             headline: 'Getting started',
-            text: 'Get started using Vapor Cloud, insight into what Vapor Cloud is, and how to utilize all the features for your project',
+            text: 'Get started using Vapor Cloud, insight into what Vapor Cloud is',
             icon: 'fas fa-question-circle',
             link: '/getting-started/',
           },
