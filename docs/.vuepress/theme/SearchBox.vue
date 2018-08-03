@@ -212,11 +212,12 @@ export default {
   font-family "Font Awesome 5 Free"
   content "\f002"
   font-style normal
+  color #000
   font-weight 900
   text-decoration inherit
   display block
   position absolute
-  z-index 999999999999999999999
+  z-index 500000
   top 15px
   left 5px
   font-size 28px
