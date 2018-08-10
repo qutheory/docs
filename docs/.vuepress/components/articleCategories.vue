@@ -31,6 +31,7 @@
   margin-top: 50px!important
 }
 .headline-container {
+  position: fixed;
   background:#2c3e50;
   padding-top:10px;
   padding-bottom:0px;
@@ -42,7 +43,8 @@
   color:#FFF;
 }
 .headlines {
-  width:140px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 4px 4px 0 0;
   float:left;
   font-size:14px;
@@ -51,6 +53,10 @@
   margin-right:10px;
   text-align:center;
   background:#2c3e50;
+}
+.headlines:hover {
+  background:#FFF!important;
+  color:#2c3e50!important;
 }
 .active {
   background:#FFF!important;
@@ -62,9 +68,9 @@
 
 .label-toggle {display: none;}
 
-@media screen and (max-width: 1353px) {
+@media screen and (max-width: 1112px) {
   .headline-menu-wrapper {
-      position: absolute;
+      position: fixed;
       z-index: 200;
       display: block;
       height: 0;
@@ -95,10 +101,10 @@
     }
 
     .label-toggle {
-      position: absolute;
+      position: relative;
       z-index: 300;
       right: 30px;
-      top: 135px;
+      top: -35px;
       cursor: pointer;
       display: block;
       float: right;
