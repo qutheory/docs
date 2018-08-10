@@ -71,7 +71,6 @@
       list-style-type: none;
       opacity: 0;
       text-align: center;
-      transition: all 1s ease;
       width: 100%;
       visibility: hidden;
     }
