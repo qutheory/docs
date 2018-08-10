@@ -32,6 +32,7 @@
 }
 .headline-container {
   position: fixed;
+  z-index: 500;
   background:#2c3e50;
   padding-top:10px;
   padding-bottom:0px;
