@@ -7,18 +7,21 @@
           &nbsp;&nbsp;<i class="icon" v-bind:class="box.icon"></i> {{ $page.title }}
         </h1>
       </span>
-      <span style="background:#2c3e50" v-for="box in boxes">
-        <router-link :to="{path: box.link}">
-          <div class="headlines active" v-if="$page.path.includes(box.link)">
-            <i class="icon" v-bind:class="box.icon"></i> {{ box.headline }}
-          </div>
-          <span class="headlines" v-else>
-            <i class="icon" v-bind:class="box.icon"></i> {{ box.headline }}
-          </span>
-        </router-link>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="label-toggle"></label>
+      <span class="headline-menu-wrapper">
+        <span class="headline-menu" style="background:#2c3e50" v-for="box in boxes">
+          <router-link :to="{path: box.link}">
+            <div class="headlines active" v-if="$page.path.includes(box.link)">
+              <i class="icon" v-bind:class="box.icon"></i> {{ box.headline }}
+            </div>
+            <span class="headlines" v-else>
+              <i class="icon" v-bind:class="box.icon"></i> {{ box.headline }}
+            </span>
+          </router-link>
+        </span>
       </span>
       </div>
-      <div style="clear:both;"></div>
 
     </div>
 </template>
@@ -52,6 +55,75 @@
 .active {
   background:#FFF!important;
   color:#2c3e50!important;
+}
+
+#menu-toggle { position: absolute; z-index: 300;}
+#menu-toggle {display: none;}
+
+.label-toggle {display: none;}
+
+@media screen and (max-width: 1353px) {
+  .headline-menu-wrapper {
+      position: absolute;
+      z-index: 200;
+      display: block;
+      height: 0;
+      list-style-type: none;
+      opacity: 0;
+      text-align: center;
+      transition: all 1s ease;
+      width: 100%;
+      visibility: hidden;
+    }
+
+    .headline-menu {
+      display: block;
+      font-size: 20px;
+      width: 100%;
+      padding: 2em 0;
+    }
+
+    .headlines {
+      text-align: center;
+      width: 100%;
+      font-size: 20px;
+    }
+
+    #menu-toggle:checked ~ .headline-menu-wrapper {
+      opacity: 1;
+      height: 100vh;
+      visibility: visible;
+    }
+
+    .label-toggle {
+      position: absolute;
+      z-index: 300;
+      right: 30px;
+      top: 135px;
+      cursor: pointer;
+      display: block;
+      float: right;
+      height: 35px;
+      margin-top: 1em;
+      width: 35px;
+    }
+    .label-toggle:before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f0c9";
+      font-style: normal;
+      color: #FFF;
+      font-weight: 900;
+      text-decoration: inherit;
+      display: block;
+      font-size: 28px;
+      width: 60px;
+      height: 100%;
+      opacity: 0.7;
+      transition-property: all;
+      transition-duration: 120ms;
+    }
+
+    .wrapper {display: block;}
 }
 </style>
 
