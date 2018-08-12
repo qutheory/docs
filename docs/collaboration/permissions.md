@@ -19,25 +19,38 @@ The following groups can be applied to users.
 | developer | Read, Write, Operate |
 | billing | Billing |
 
-### Manage access
+## Admin group
 
-Manage access should be seen as **Owner** this is the only role that can do administrative tasks like:
+Admin group should be seen as **owner** of the organization, and gets access to everything for example
 
 - Delete
 - Invite users
 - Manage permissions etc.
 
-This role can also lock an environment, locking other users from manage this specific environment, for example disallow developers from
-managing Production environment.
+This role can also lock applications and environments.
 
-## Developer access
+## Developer group
 
-This user can do all actions on tools linked to the organizations, unless a specific environment is locked.
+Users in the developer group can do everything except manage the organization.
+
+If an application or environment are **Locked** these can't be accessed by developers
 
 ## Lock environment
 
 Admins can lock a specific environment, and disallow developers from accessing it. A case for this can be
 an admin can lock Production environment, so only admins can deploy to this environment.
 
-This fits very well into the pipeline system, so only approved persons are able to promote an application to production, making sure
-everything is tested and works before promoting to production.
+And example use case is to use it with the Build pipeline system, making it possible to lock production environment
+so only Admins can promote a release to production.
+
+## Lock application
+
+Locking an application makes it possible to remove access to people in developer group.
+so when an application isn't under development, it's possible to lock it so all data and code are safe from change.
+
+## Billing group
+
+This group can be used for people to only access billing information, to manage credit cards, see transactions, and download
+invoices. (These information can also be accessed by the admin group)
+
+This is a good way to give a finance department access to billing information, without giving them access to applications
