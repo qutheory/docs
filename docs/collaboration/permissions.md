@@ -28,6 +28,10 @@ Admin group should be seen as **owner** of the organization, and gets access to 
 - Manage permissions etc.
 - Locking
 
+::: tip Info
+We do recommend having as few admins as possible in an organization, to keep the overall account secure.
+:::
+
 ### Developer group
 
 Users in the developer group can do everything except manage the organization and billing
