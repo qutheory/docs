@@ -30,7 +30,7 @@ Admin group should be seen as **owner** of the organization, and gets access to 
 
 ### Developer group
 
-Users in the developer group can do everything except manage the organization.
+Users in the developer group can do everything except manage the organization and billing
 
 If an application or environment are **Locked** these can't be accessed by developers
 
@@ -42,6 +42,8 @@ invoices. (These information can also be accessed by the admin group)
 This is a good way to give a finance department access to billing information, without giving them access to applications
 
 ## Locking
+
+Locking can be done by the **Admin group**
 
 ### Lock environment
 
