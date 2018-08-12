@@ -69,6 +69,13 @@ module.exports = {
         '',
         'persistent-storage'
       ],
+      '/collaboration/': [
+        '',
+        'permissions'
+      ],
+      '/account-billing/': [
+        ''
+      ],
       '/announcements/': [
         ''
       ],

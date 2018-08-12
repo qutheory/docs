@@ -69,7 +69,7 @@
 
 .label-toggle {display: none;}
 
-@media screen and (max-width: 1112px) {
+@media screen and (max-width: 1395px) {
   .headline-menu-wrapper {
       position: fixed;
       z-index: 200;
@@ -190,6 +190,18 @@ export default {
             text: 'Documentation for using our public API',
             icon: 'fas fa-terminal',
             link: '/api/',
+          },
+          {
+            headline: 'Collaboration',
+            text: 'Information on collaboration',
+            icon: 'fas fa-users',
+            link: '/collaboration/'
+          },
+          {
+            headline: 'Account and billing',
+            text: 'Information on account and billing',
+            icon: 'fas fa-hand-holding-usd',
+            link: '/account-billing/'
           },
           {
             headline: 'Announcements',

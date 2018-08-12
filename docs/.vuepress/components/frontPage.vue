@@ -76,6 +76,18 @@ export default {
             link: '/api/',
           },
           {
+            headline: 'Collaboration',
+            text: 'Information on collaboration',
+            icon: 'fas fa-users',
+            link: '/collaboration/'
+          },
+          {
+            headline: 'Account and billing',
+            text: 'Information on account and billing',
+            icon: 'fas fa-hand-holding-usd',
+            link: '/account-billing/'
+          },
+          {
             headline: 'Announcements',
             text: 'Latest Vapor Cloud news',
             icon: 'fas fa-bullhorn',
