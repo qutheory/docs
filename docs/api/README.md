@@ -18,18 +18,6 @@ to Vapor Cloud.
 Be aware, when using the Vapor Cloud API, you are working against the live API.
 :::
 
-### Version details
-
-The API is currently split out into different versions, because huge parts of the backend are being rebuilt.
-
-The versioning can be seen through the URL
-
-| URL | Backend spec |
-| ---- | ------ |
-| No version | Using the Cloud 1 monolithic architecture |
-| /v1/* | Using the Cloud 1 monolithic architecture |
-| /v2/* | Using the new Cloud 2 microservice architecture |
-
 ## Authentication
 
 When authenticating against the API, you should create a user token.
