@@ -29,14 +29,14 @@ module.exports = {
       '/api/': [
         '',
         'organizations',
-        'permissions',
-        'projects',
-        'application',
-        'environments',
-        'configuration',
-        'git',
-        'replica',
-        'deployment'
+        'permissions'//,
+        //'projects',
+        //'application',
+        //'environments',
+        //'configuration',
+        //'git',
+        //'replica',
+        //'deployment'
       ],
       '/getting-started/': [
         '',
