@@ -25,6 +25,9 @@ next: false
     <tab name="Vapor">
 <pre><code class="language-swift">// Vapor client not done</code></pre>      
     </tab>
+  <tab name="VueJS">
+<pre><code class="language-js">// VueJS client not done</code></pre>      
+    </tab>
 </tabs>
 
 ### Example response
@@ -44,6 +47,9 @@ next: false
     </tab>
     <tab name="Vapor">
 <pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+    <tab name="VueJS">
+<pre><code class="language-js">// VueJS client not done</code></pre>      
     </tab>
 </tabs>
 
@@ -64,6 +70,9 @@ next: false
     <tab name="Vapor">
 <pre><code class="language-swift">// Vapor client not done</code></pre>      
     </tab>
+    <tab name="VueJS">
+<pre><code class="language-js">// VueJS client not done</code></pre>      
+    </tab>
 </tabs>
 
 ### Example response
@@ -84,6 +93,9 @@ next: false
     <tab name="Vapor">
 <pre><code class="language-swift">// Vapor client not done</code></pre>      
     </tab>
+    <tab name="VueJS">
+<pre><code class="language-js">// VueJS client not done</code></pre>      
+    </tab>
 </tabs>
 
 ## View
@@ -103,6 +115,9 @@ next: false
     <tab name="Vapor">
 <pre><code class="language-swift">// Vapor client not done</code></pre>      
     </tab>
+    <tab name="VueJS">
+<pre><code class="language-js">// VueJS client not done</code></pre>      
+    </tab>
 </tabs>
 
 ### Example response
@@ -120,6 +135,9 @@ next: false
     </tab>
     <tab name="Vapor">
 <pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+    <tab name="VueJS">
+<pre><code class="language-js">// VueJS client not done</code></pre>      
     </tab>
 </tabs>
 
@@ -143,6 +161,9 @@ next: false
     <tab name="Vapor">
 <pre><code class="language-swift">// Vapor client not done</code></pre>      
     </tab>
+    <tab name="VueJS">
+<pre><code class="language-js">// VueJS client not done</code></pre>      
+    </tab>
 </tabs>
 
 ### Example response
@@ -160,6 +181,9 @@ next: false
     </tab>
     <tab name="Vapor">
 <pre><code class="language-swift">// Vapor client not done</code></pre>      
+    </tab>
+    <tab name="VueJS">
+<pre><code class="language-js">// VueJS client not done</code></pre>      
     </tab>
 </tabs>
 
