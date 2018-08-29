@@ -30,6 +30,7 @@ module.exports = {
         '',
         'organizations',
         'permissions',
+        'git',
         'applications',
         'deployment'
       ],
