@@ -32,6 +32,7 @@ module.exports = {
         'permissions',
         'git',
         'applications',
+        'replicas',
         'deployment'
       ],
       '/getting-started/': [
