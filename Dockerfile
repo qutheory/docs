@@ -11,4 +11,4 @@ FROM nginx:1.13.12-alpine as production-stage
 COPY --from=build-stage /app/docs/.vuepress/dist/ /usr/share/nginx/html/
 RUN chown -R nginx:nginx /usr/share/nginx/html/
 EXPOSE 80
-CMD ["nginx2", "-g", "daemon off;"]
+CMD ["nginx22222", "-g", "daemon off;"]
