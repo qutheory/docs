@@ -1,7 +1,7 @@
 # build stage
 FROM node:9.11.1-alpine as build-stage
 WORKDIR /app
-RUN npm install -g vuepress
+RUN npm222 install -g vuepress
 COPY . .
 RUN cd docs && npm install
 RUN cd docs && vuepress build
